@@ -2,6 +2,7 @@
 title: "13. Ecografía como herramienta diagnóstica para fascitis plantar"
 title_seo: "▷ Ecografía como herramienta diagnóstica para fascitis plantar"
 slug: 13-ecografia-como-herramienta-diagnostica-para-fascitis-plantar
+description:
 categories: General
 image: /wp-content/uploads/Ecografía-como-herramienta-diagnóstica.001-768x576.jpeg
 toc: false

@@ -2,7 +2,7 @@
 title: "2. Factores lesivos"
 title_seo: "▷ Factores lesivos"
 slug: factores-lesivos
-description: 
+description:
 categories: General
 image: /wp-content/uploads/2016/05/Factor-lesivo.001.jpeg
 toc: false

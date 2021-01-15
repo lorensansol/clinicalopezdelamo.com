@@ -2,6 +2,7 @@
 title: "10. ¿Influye el tiempo de aplicación de la técnica fenol-alcohol para cirugía de uña encarnada?"
 title_seo: "▷ ¿Influye el tiempo de aplicación de la técnica fenol-alcohol para cirugía de uña encarnada?"
 slug: 10-influye-el-tiempo-de-aplicacion-de-la-tecnica-fenol-alcohol-para-cirugia-de-una-encarnada
+description:
 categories: General
 image: /wp-content/uploads/técnica-Fenol-alcohol.001-768x576.jpeg
 toc: false

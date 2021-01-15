@@ -2,6 +2,7 @@
 title: "5. Elección de material para la elaboración de una ortesis plantar"
 title_seo: "▷ Elección de material para la elaboración de una ortesis plantar"
 slug: 5-eleccion-de-material-para-la-elaboracion-de-una-ortesis-plantar
+description:
 categories: General
 image: /wp-content/uploads/Elección-de-material-para-ortesis-plantares.001.jpeg
 toc: false

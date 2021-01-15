@@ -2,6 +2,7 @@
 title: "7. Podólogo durante COVID-19"
 title_seo: "▷ Podólogo durante COVID-19"
 slug: 7-podologo-durante-covid-19
+description:
 categories: General
 image: https://i.ytimg.com/vi_webp/g870Oj902hg/sddefault.webp
 toc: false

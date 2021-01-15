@@ -2,6 +2,7 @@
 title: "15. Ondas de choque para fascitis plantar"
 title_seo: "▷ Ondas de choque para fascitis plantar"
 slug: 15-ondas-de-choque-para-fascitis-plantar
+description:
 categories: General
 image: /wp-content/uploads/ondas-de-choque-768x576.jpeg
 toc: false

@@ -2,6 +2,7 @@
 title: "9. ¿Influye el factor tiempo en la eficacia de las ortesis plantares?"
 title_seo: "▷ ¿Influye el factor tiempo en la eficacia de las ortesis plantares?"
 slug: 9-influye-el-factor-tiempo-en-la-eficacia-de-as-ortesis-plantares
+description:
 categories: General
 image: /wp-content/uploads/¿influye-el-tiempo-en-la-eficacia-de-las-ortesis-plantares.001-768x576.jpeg
 toc: false
