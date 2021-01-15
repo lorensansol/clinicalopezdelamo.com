@@ -1,6 +1,6 @@
 # clinicalopezdelamo.com
 
-[![Clínica López del Amo(/assets/img/logo.svg)]](https://clinicalopezdelamo.com/)
+[![Clínica López del Amo(/wp-content/uploads/2016/06/cropped-logo-cinica-lopez-del-amo.jpg)]](https://clinicalopezdelamo.com/)
 
 ## Jekyll
 
@@ -117,9 +117,3 @@ Deploy with date now
 # deploy with date now
 git add .;git commit -m "Update: `date +'%Y-%m-%d %H:%M:%S'`";git push
 ```
-
-## FALTA
-
-- gulp
-- admin
-- disqus
