@@ -114,14 +114,15 @@ gulp.task('fonts', gulp.series(
 ))
 
 gulp.task('gfonts', gulp.series(
-  () => child.exec('grep "google_fonts:" _config.yml | perl -pe "s/google_fonts: |\'//g" | sed "s/&family=/|/" > fonts.list'),
+  // () => child.exec('grep "gfonts:" _config.yml | perl -pe "s/gfonts: |\'//g" | sed "s/&family=/|/" > fonts.list'),
   () => {
     return gulp
       .src('fonts.list')
       .pipe(googleWebFonts({ fontDisplayType: 'swap' }))
       .pipe(gulp.dest('_assets/gfonts'))
-  },
-  () => child.exec('rm fonts.list')
+  }
+  // ,
+  // () => child.exec('rm fonts.list')
 ))
 
 gulp.task('rest', () => {
