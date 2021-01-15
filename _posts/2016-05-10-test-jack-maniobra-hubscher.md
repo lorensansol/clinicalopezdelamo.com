@@ -1,8 +1,10 @@
 ---
 title: "1. Test de Jack o maniobra de Hubscher"
+title_seo: "▷ Test de Jack o maniobra de Hubscher"
 slug: test-jack-maniobra-hubscher
-categories: General
-image: /wp-content/uploads/2016/05/Windlass.001.jpeg
+description: "El Test de Jack es negativo, si se produce en cadena los movimientos de plantarflexión del primer radio, dorsalflexión del calcaneo..."
+categories: [General]
+image: "/wp-content/uploads/2016/05/Windlass.001.jpeg"
 toc: false
 published: true
 date: 2016-05-10

@@ -59,7 +59,7 @@ collections:
         widget: list
         hint: Indica una o varias categorías separadas por coma y espacio
         min: 1
-        default: General
+        # default: [General]
       - label: Imagen principal
         name: image
         widget: image
