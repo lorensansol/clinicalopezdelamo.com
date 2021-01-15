@@ -2,8 +2,8 @@
 title: "4. Uso de resinas de refuerzo en plantillas"
 title_seo: "▷ Uso de resinas de refuerzo en plantillas"
 slug: uso-de-resinas-de-refuerzo-en-plantillas
-description:
-categories: General
+description: ""
+categories: [General]
 image: /wp-content/uploads/plantillas-de-resina.001.jpeg
 toc: false
 published: true

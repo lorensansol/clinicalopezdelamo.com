@@ -2,8 +2,8 @@
 title: "8. Diagnóstico mediante ecografía en podología"
 title_seo: "▷ Diagnóstico mediante ecografía en podología"
 slug: 8-diagnostico-mediante-ecografia-en-podologia
-description:
-categories: General
+description: ""
+categories: [General]
 image: /wp-content/uploads/10-768x576.png
 toc: false
 published: true

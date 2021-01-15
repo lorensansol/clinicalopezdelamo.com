@@ -2,8 +2,8 @@
 title: "14. Eliminación de verruga plantar o papiloma"
 title_seo: "▷ Eliminación de verruga plantar o papiloma"
 slug: 14-eliminacion-de-verruga-plantar-o-papiloma
-description:
-categories: General
+description: ""
+categories: [General]
 image: /wp-content/uploads/Eliminación-de-verruga-plantar-o-papiloma.001-768x576.jpeg
 toc: false
 published: true

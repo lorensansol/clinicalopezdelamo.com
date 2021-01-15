@@ -2,8 +2,8 @@
 title: "5. Paroniquia: infección del borde ungueal"
 title_seo: "▷ Paroniquia: infección del borde ungueal"
 slug: 5-paroniquia-infeccion-del-borde-ungueal
-description:
-categories: General
+description: ""
+categories: [General]
 image: /wp-content/uploads/2016/05/Windlass.001.jpeg
 toc: false
 published: true
