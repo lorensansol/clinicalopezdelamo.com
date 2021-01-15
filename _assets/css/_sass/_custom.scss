@@ -291,6 +291,7 @@ span[onclick]:not(.btn):hover {
 }
 .slideshow__item {
   height: auto;
+  height: intrinsic;
   width: calc(100% / 10);
 }
 @keyframes slideshow10 {
