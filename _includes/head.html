@@ -31,7 +31,7 @@
     {% endif %}
 
     <!-- CSS ugly -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css"{% if site.critical_path_css %} media="print" onload="this.media='all'"{% endif %}>
 
     {% if site.google_fonts %}
       <!-- Google Fonts CDN -->

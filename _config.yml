@@ -18,7 +18,7 @@ author_box: true
 author_links: true
 search: true
 lazyload_comments: false # if not, comments load when clic
-critical_path_css: true
+critical_path_css: false
 google_fonts: 'family=Open+Sans&family=Roboto+Slab:wght@700&display=swap'
 
 # Authors
