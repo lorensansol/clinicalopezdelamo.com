@@ -1,5 +1,6 @@
 ---
 title: "11. ¿Qué es el DROP de una zapatilla?"
+title_seo: "▷ ¿Qué es el DROP de una zapatilla?"
 slug: 11-que-es-el-drop-de-una-zapatilla
 categories: General
 image: /wp-content/uploads/que-es-el-drop.001-768x576.jpeg

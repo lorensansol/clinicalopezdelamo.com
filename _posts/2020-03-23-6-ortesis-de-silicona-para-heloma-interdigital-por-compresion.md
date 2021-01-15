@@ -1,5 +1,6 @@
 ---
 title: "6. Ortesis de silicona para heloma interdigital por compresión."
+title_seo: "▷ Ortesis de silicona para heloma interdigital por compresión."
 slug: 6-ortesis-de-silicona-para-heloma-interdigital-por-compresion
 categories: General
 image: /wp-content/uploads/ortesis-de-silicona.001.jpeg

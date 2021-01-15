@@ -1,5 +1,6 @@
 ---
 title: "12. Retroniquia de larga evolución durante el confinamiento del COVID-19"
+title_seo: "▷ Retroniquia de larga evolución durante el confinamiento del COVID-19"
 slug: 12-retroniquia-de-larga-evolucion-durante-el-confinamiento-del-covid-19
 categories: General
 image: /wp-content/uploads/retroniquia-de-larga-evolución.001-768x576.jpeg

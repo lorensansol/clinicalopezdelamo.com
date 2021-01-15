@@ -1,5 +1,6 @@
 ---
 title: "3. Lesiones en corredores"
+title_seo: "▷ Lesiones en corredores"
 slug: lesiones-en-corredores
 categories: General
 image: /wp-content/uploads/lesionesencarrera.jpeg
