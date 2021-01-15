@@ -1,6 +1,6 @@
 # clinicalopezdelamo.com
 
-[![Clínica López del Amo(/wp-content/uploads/2016/06/cropped-logo-cinica-lopez-del-amo.jpg)]](https://clinicalopezdelamo.com/)
+[![Clínica López del Amo](/wp-content/uploads/2016/06/cropped-logo-cinica-lopez-del-amo.jpg)](https://clinicalopezdelamo.com/)
 
 ## Jekyll
 
