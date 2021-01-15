@@ -4,7 +4,7 @@ title_seo: "▷ Paroniquia: infección del borde ungueal"
 slug: 5-paroniquia-infeccion-del-borde-ungueal
 description: ""
 categories: [General]
-image: /wp-content/uploads/2016/05/Windlass.001.jpeg
+image: /wp-content/uploads/paroniquia-o-uña-encarnada.001-1024x768.jpeg
 toc: false
 published: true
 date: 2020-03-19
