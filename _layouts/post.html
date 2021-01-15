@@ -1,0 +1,96 @@
+---
+layout: default
+disqus: false
+archive: false
+post_class: post-template
+---
+
+<div class="entry-header">
+  <!-- Post Title -->
+  <h1 class="posttitle display-4">{{ page.title }}</h1>
+  <!-- Author & Date  Box -->
+  {% assign author = site.authors[page.author] %}
+  {% if page.author %}
+    <!-- <div class="d-flex align-items-center mt-4">
+      <div>
+        {% if author.avatar %}
+          {% if jekyll.environment == "production" %}
+            <img class="author-thumb" width="50" height="50" src="https://images.weserv.nl/?url={{ site.url }}{{ site.baseurl }}{{ author.avatar }}&w=50&q=65" alt="{{ author.name }}">
+          {% else %}
+            <img class="author-thumb" width="50" height="50" src="{{ site.baseurl }}{{ author.avatar }}" alt="{{ author.name }}">
+          {% endif %}
+        {% else %}
+          <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=50&d=mm&r=x" alt="{{ author.name }}">
+        {% endif %}
+      </div>
+      <div>
+        {% if author.name %}
+          {% if site.author_links %}
+            {% if author.web %}
+              {% if author.web contains "://" %}
+                <a class="font-weight-bold text-dark ml-2" onclick="window.open('{{ author.web }}','_blank')">{{ author.name }}</a>
+              {% else %}
+                <a class="font-weight-bold text-dark ml-2" onclick="location.href='{{ author.web }}'">{{ author.name }}</a>
+              {% endif %}
+            {% else %}
+              <a class="font-weight-bold text-dark ml-2" onclick="location.href='{{ site.baseurl }}/autores#{{ page.author }}'">{{ author.name }}</a>
+            {% endif %}
+          {% else %}
+            <span class="font-weight-bold text-dark ml-2">{{ author.name }}</span>
+          {% endif %}
+        {% endif %}
+        <span class="d-inline-block">
+          <span class="post-date d-inline-block ml-2">
+            <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">
+              {% include date-spa.html date=page.date %}
+            </time>
+          </span>
+          {% if page.last_modified_at %}
+            <small class="text-muted d-inline-block ml-2">
+              (Actualizado:
+              <time class="text-dark" datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">
+                {% include date-spa.html date=page.last_modified_at %}
+              </time>
+              )
+            </small>
+          {% endif %}
+        </span>
+      </div>
+    </div> -->
+    <div class="d-flex mt-4">
+      {% if page.last_modified_at %}
+        <time class="post-date badge badge-light" datetime="{{ page.date | date:"%Y-%m-%d" }}">
+          {% include date-spa.html date=page.date %}
+        </time>
+        <small class="text-muted mx-2">
+          Actualizado:
+        </small>
+        <time class="badge badge-primary" datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">
+          {% include date-spa.html date=page.last_modified_at %}
+        </time>
+      {% else %}
+        <time class="post-date badge badge-primary" datetime="{{ page.date | date:"%Y-%m-%d" }}">
+          {% include date-spa.html date=page.date %}
+        </time>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+
+<!-- Featured Image -->
+{% include featured-image.html image=page.image featured=true %}
+
+<!-- Content -->
+{% include article.html %}
+
+<!-- Author Box if enabled from _config.yml -->
+{% include author-box.html %}
+
+<!-- Comments if not disabled with comments: false -->
+{% include comments.html %}
+
+<!-- Share -->
+{% include share.html %}
+
+<!-- Related Post -->
+{% include related-posts.html %}

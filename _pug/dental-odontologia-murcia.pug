@@ -1,0 +1,22 @@
+.
+  ---
+  layout: compress
+  ---
+  
+doctype html
+html(lang="es")
+  | {% include head.html %}
+  body#top(class='{{ layout }}')
+    include includes/odontologia/nav.pug
+    include includes/odontologia/header.pug
+    main(role='main').text-muted
+      include includes/odontologia/funciones.pug
+      include includes/odontologia/servicios.pug
+      include includes/covid.pug
+      include includes/odontologia/contacto.pug
+    .
+      {% include footer.html %}
+      {% include btn-callnow.html %}
+    .d-md-none.pb-4.bg-white
+    script(type='application/ld+json')
+      include includes/odontologia/schema.json

@@ -1,0 +1,9 @@
+section#blog
+  .container
+    div(data-showup)
+      h2.h1.text-primary.text-uppercase Blog
+      p.lead.text-muted Artículos recientes
+    div(data-showup)
+      |  {{ content }}
+    .mt-5(data-showup)
+      a.btn.btn-primary.btn-lg(href='{{ site.baseurl }}/blog/') ✚ Más

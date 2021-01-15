@@ -1,0 +1,38 @@
+---
+layout: default
+author: true
+---
+<div class="sitetag mx-auto">
+  <h1 class="posttitle text-uppercase">{{ page.title }}</h1>
+</div>
+
+<div class="d-flex flex-wrap mt-5">
+  {% for author in site.authors %}
+    <a class="smoothscroll btn btn-primary m-1" href="#{{ author[0] }}">
+      {% if author[1].avatar %}
+        <img class="author-thumb rounded-circle" src="{{ site.baseurl }}{{ author[1].avatar }}" alt="{{ author.name }}" />
+      {% else %}
+        <img class="author-thumb rounded-circle" src="https://www.gravatar.com/avatar/{{ author[1].gravatar }}?s=50&d=mm&r=x" alt="{{ author[1].name }}" />
+      {% endif %}
+      {{ author[1].name }}
+    </a>
+  {% endfor %}
+</div>
+
+{% for auth in site.authors %}
+  <div class="pt-5" id="{{ auth[0] }}"></div>
+  {% assign author = auth[1] %}
+  {% include author-box.html %}
+  <div class="blog-grid-container">
+    {% assign pages_list = site.posts | where: 'author', auth[0] %}
+    {% for post in pages_list %}
+      {% if post.title != null %}
+        {% if group == null or group == post.group %}
+          {% include postbox.html %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% assign pages_list = nil %}
+    {% assign group = nil %}
+  </div>
+{% endfor %}

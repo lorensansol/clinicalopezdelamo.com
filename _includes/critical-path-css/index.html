@@ -1,0 +1,17 @@
+<style>
+{% if page.layout == 'index'
+   or page.layout == 'pie-podologo-murcia'
+   or page.layout == 'dental-odontologia-murcia'
+   or page.layout == 'fisioterapia-osteopatia-murcia'
+   or page.layout == 'quienes-somos'
+   or page.layout == 'donde-estamos'
+%}
+  {% include critical-path-css/critical-index.css %}
+{% else %}
+  {% if page.layout == 'post' or page.layout == 'page' %}
+    {% include critical-path-css/critical-posts.css %}
+  {% else %}
+    {% include critical-path-css/critical-bloglist.css %}
+  {% endif %}
+{% endif %}
+</style>

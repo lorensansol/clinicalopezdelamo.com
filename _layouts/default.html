@@ -1,0 +1,50 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="es">
+
+{% include head.html %}
+
+<body id="top" class="layout-blog {{ layout }}">
+
+<div class="d-flex flex-column text-muted">
+  <!-- Before div flexbox and after div order-2 for put the menú first -->
+
+  <div class="site-content {% if page.url == '/mas-podologia' %}firstpage{% endif %} order-2 mb-5 pb-5">
+
+    <div class="container pt-5">
+
+      <!-- Site Logo/Name -->
+      <div class="sitetag mb-5">
+        {% if page.url == '/mas-podologia' %}<h1>{% endif %}
+          <a class="h1 text-primary" href="{{ site.baseurl }}/mas-podologia">Más Podología</a>
+        {% if page.url == '/mas-podologia' %}</h1>{% endif %}
+        <p class="d-block">Publicaciones sobre ciencia podológica y especialidades relacionadas con ésta</p>
+      </div>
+
+      {% if paginator.page > 1 %}
+        <h1 class="sitetag">
+          <a class="text-secondary" href="{{ site.baseurl }}/mas-podologia">Página {{paginator.page}} de {{paginator.total_pages}}</a>
+        </h1>
+      {% endif %}
+
+      <!-- Content -->
+      <div class="main-content">
+        {{ content }}
+      </div>
+      
+      {% include newsletter.html %}
+
+    </div> <!-- /.container -->
+
+  </div> <!-- /.site-content -->
+
+  {% include menu.html %}
+
+</div>
+
+{% include footer.html %}
+
+</body>
+</html>

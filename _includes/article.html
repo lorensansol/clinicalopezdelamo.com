@@ -1,0 +1,21 @@
+<!-- Post, Page Content
+================================================== -->
+<div class="article-post">
+  <!-- Toc if any -->
+  {% if page.toc %}
+    {% if page.beforetoc %}
+      <p><em>{{page.beforetoc}}</em></p>
+    {% endif %}
+    <div class="toc mb-4 px-4 border rounded shadow">
+      <p class="h4 mb-3">Índice</p>
+      {% include toc.html html=content ordered=true %}
+    </div>
+  {% endif %}
+  <!-- End Toc -->
+  <!-- Change src attribute in (markdown) content for lazyload, add class and site.baseurl -->
+  {% if site.baseurl == '' %}
+    {{ content | replace: ' src=', ' class="img-thumbnail" data-src=' }}
+  {% else %}
+    {{ content | replace: ' src="', ' class="img-thumbnail" data-src="~~~' | replace: '~~~', site.baseurl }}
+  {% endif %}
+</div>

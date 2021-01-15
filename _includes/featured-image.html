@@ -1,0 +1,38 @@
+{% if include.image %}
+    {% capture imgBig %}{% if include.image contains "://" %}{{ include.image }}{% else %}{{ site.baseurl }}{{ include.image }}{% endif %}{% endcapture %}
+
+    {% if jekyll.environment == "production" %}
+        {% capture imgSmall %}https://images.weserv.nl/?url={% if include.image contains "://" %}{{ include.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ include.image }}{% endif %}&w=400&q=65{% endcapture %}
+    {% else %}
+        {% assign imgSmall = imgBig %}
+    {% endif %}
+
+    {% if include.featured %}
+        <div class="entry-featured-image">
+            <img class="featured-image img-thumbnail" width="700" height="467" alt="{{ page.title }}" src="{{ imgBig }}" srcset="{{ imgSmall }} 400w, {{ imgBig }} 700w">
+            <!-- <img class="featured-image image-shadow" width="700" height="467" alt="{{ page.title }}" src="{{ imgBig }}" srcset="{{ imgSmall }} 400w, {{ imgBig }} 700w" sizes="
+                (max-width: 600px) calc(90vw - 30px),
+                (max-width: 1024px) calc(90vw - 95px),
+                (max-width: 1212px) calc(80vw - 30px),
+                940px"> -->
+        </div>
+    {% else %}
+        {% if page.url == '/blog/' and post.url == paginator.posts[0].url %}
+            <img class="img-thumb" width="100%" height="400" alt="{{ post.title }}" src="{{ imgBig }}" srcset="{{ imgSmall }} 400w, {{ imgBig }} 730w"">
+            <!-- <img class="img-thumb" width="100%" height="400" alt="{{ post.title }}" src="{{ imgBig }}" srcset="{{ imgSmall }} 400w, {{ imgBig }} 730w" sizes="
+                (max-width: 600px) calc(90vw - 30px),
+                (max-width: 1024px) calc(90vw - 95px),
+                (max-width: 1439px) calc(((80vw - 90px) / 3) * 2 + 30px),
+                730px"> -->
+        {% else %}
+            {% if post.url == paginator.posts[1].url or post.url == paginator.posts[2].url %}{% assign imgHeight = 160 %}{% else %}{% assign imgHeight = 240 %}{% endif %}
+            <img class="img-thumb" width="100%" height="{{ imgHeight }}" alt="{{ post.title }}" data-src="{{ imgBig }}" data-srcset="{{ imgSmall }} 400w, {{ imgBig }} 596w">
+            <!-- <img class="img-thumb" width="100%" height="{{ imgHeight }}" alt="{{ post.title }}" data-src="{{ imgBig }}" data-srcset="{{ imgSmall }} 400w, {{ imgBig }} 596w" data-sizes="
+                (max-width: 600px) calc(90vw - 30px),
+                (max-width: 768px) calc(90vw - 95px),
+                (max-width: 1024px) calc((90vw - 125px) / 2),
+                (max-width: 1439px) calc((80vw - 90px) / 3),
+                350px"> -->
+        {% endif %}
+    {% endif %}
+{% endif %}

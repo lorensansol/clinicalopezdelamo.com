@@ -1,0 +1,34 @@
+{
+  "name": "clinicalopezdelamo.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "git add .;git commit -m \"Actualización: `date +'%Y-%m-%d %H:%M:%S'`\";git push"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "@babel/register": "*",
+    "autoprefixer": "^10.0.2",
+    "critical": "*",
+    "cssnano": "*",
+    "gulp": "*",
+    "gulp-babel": "*",
+    "gulp-fontgen": "*",
+    "gulp-google-webfonts": "*",
+    "gulp-imagemin": "*",
+    "gulp-postcss": "^9.0.0",
+    "gulp-pug": "*",
+    "gulp-purgecss": "^3.0.0",
+    "gulp-terser": "*",
+    "postcss": "^8.1.7",
+    "prismjs": "*"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "bootstrap-scss": "*"
+  },
+  "description": ""
+}

@@ -1,0 +1,9 @@
+.collapse {
+  display: block !important;
+  transition: all .5s;
+  overflow: hidden;
+  max-height: 500em;
+}
+.collapse:not(.show) {
+  max-height: 0;
+}

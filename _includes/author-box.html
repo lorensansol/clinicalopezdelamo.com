@@ -1,0 +1,41 @@
+<!-- Author Box -->
+{% if site.author_box %}
+<div class="row author-box align-items-center">
+  <div class="col-md-2 pb-4 pb-md-0">
+    {% if author.avatar %}
+      {% if jekyll.environment == "production" %}
+        <img class="author-thumb" width="85" height="85" data-src="https://images.weserv.nl/?url={{ site.url }}{{ site.baseurl }}{{ author.avatar }}&w=85&q=65" alt="{{ author.name }}" />
+      {% else %}
+        <img class="author-thumb" width="85" height="85" data-src="{{ site.baseurl }}{{ author.avatar }}" alt="{{ author.name }}" />
+      {% endif %}
+    {% else %}
+      <img class="author-thumb" data-src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=85&d=mm&r=x" alt="{{ author.name }}" />
+    {% endif %}
+  </div>
+  <div class="col-md-10">
+    {% if author.name %}
+      {% if site.author_links %}
+        {% if author.web %}
+          {% if author.web contains "://" %}
+            <a class="h4" onclick="window.open('{{ author.web }}','_blank')">Sobre {{ author.name }}</a>
+          {% else %}
+            <a class="h4" onclick="location.href='{{ site.baseurl }}{{ author.web }}'">Sobre {{ author.name }}</a>
+          {% endif %}
+        {% else %}
+          <a class="h4" onclick="location.href='{{ site.baseurl }}/autores#{% if page.author %}{{ page.author }}{% else %}{{ auth[0] }}{% endif %}'">Sobre {{ author.name }}</a>
+        {% endif %}
+      {% else %}
+        <span class="h4">Sobre {{ author.name }}</span> 
+      {% endif %}
+    {% endif %}
+    {% if author.twitter %}
+      <a onclick="window.open('{{ author.twitter }}','_blank')" class="btn-sm text-primary">
+        <i class="fab fa-twitter"></i>
+      </a>
+    {% endif %}
+    <span class="author-description d-block mt-2">
+      {{ author.description }}
+    </span>
+  </div>
+</div>
+{% endif %}

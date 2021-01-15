@@ -1,0 +1,18 @@
+.
+  ---
+  layout: compress
+  ---
+  
+doctype html
+html(lang="es")
+  | {% include head.html %}
+  body#top(class='{{ layout }}')
+    include includes/index/header.pug
+    main.text-center
+      include includes/index/main.pug
+  .
+    {% include footer.html %}
+    {% include btn-callnow.html %}
+  .d-md-none.pb-4.bg-primary
+  script(type='application/ld+json')
+    include includes/schema.json

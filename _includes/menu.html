@@ -1,0 +1,50 @@
+<button class="nav-icon btn btn-primary m-2 m-sm-3 rounded-circle" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="hamburger-bar"></div>
+</button>
+<div id="blackover-nav" class="blackover"></div>
+<nav id="menu" class="bg-white p-5">
+    <h2 class="text-secondary text-uppercase my-4">Navegación</h2>
+    <ul class="list-unstyled p-0">
+        {% for item in site.data.navigation %}
+            <li class="mb-3">
+                <a
+                    {% if item.onclick %}
+                        onclick="location.href='{{ site.baseurl }}{{ item.link }}'"
+                    {% else %}
+                        href="{{ site.baseurl }}{{ item.link }}"
+                    {% endif %}
+                    {% if page.url == item.link %}
+                        class="text-muted"
+                    {% else %}
+                        class="text-primary"
+                    {% endif %}
+                >
+                    <i class="fas fa-fw {% if item.fa %}fa-{{ item.fa }}{% endif %} text-secondary"></i>
+                    {{ item.name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    {% if site.search %}
+        {% include search-lunr.html %}
+    {% endif %}
+</nav>
+{% if site.search %}
+  <div id="lunrsearchresults">
+    <div id="resultsmodal" class="modal fade d-block"  tabindex="-1" role="dialog" aria-labelledby="resultsmodal">
+      <div class="modal-dialog shadow" role="document">
+        <div class="modal-content">
+          <div class="modal-header" id="modtit">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar"> &times; </button>
+          </div>
+          <div class="modal-body">
+            <ul class="mb-0"></ul>   
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">✖ Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

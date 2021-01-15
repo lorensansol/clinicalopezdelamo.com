@@ -1,0 +1,110 @@
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  {% if paginator.page > 1 %}
+    <title>Página {{paginator.page}} de {{paginator.total_pages}} | {{ site.title }}</title>
+  {% else %}
+    {% if page.title_seo %}
+      <title>{{ page.title_seo }}</title>
+    {% else %}
+      <title>{{ page.title }}</title>
+    {% endif %}
+  {% endif %}
+
+  <!-- SEO tags without title -->
+  {% seo title=false %}
+
+  <!-- Robots -->
+  {% if page.sitemap == false %}
+    <meta name="robots" content="noindex">
+  {% endif %}
+
+  {% if jekyll.environment == "production" %}
+  <!-- Production -->
+
+    {% if site.critical_path_css %}
+      {% include critical-path-css/index.html %}
+    {% endif %}
+
+    <!-- CSS ugly -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css" media="print" onload="this.media='all'">
+
+    {% if site.google_fonts %}
+      <!-- Google Fonts CDN -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ site.google_fonts }}&display=swap" media="print" onload="this.media='all'">
+    {% endif %}
+
+    {% if site.google_analytics %}
+      <!-- Google Analytics (change your GA id in _config.yml) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{site.google_analytics}}');
+      </script>
+    {% endif %}
+
+    {% if site.google_adsense %}
+      <!-- Google Adsense (change your pub id in _config.yml) -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "{{site.google_adsense}}",
+          enable_page_level_ads: true
+        });
+      </script>
+    {% endif %}
+
+  {% else %}
+  <!-- Development -->
+
+    <!-- CSS pretty -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/_assets/css/styles.css">
+    
+    {% if site.google_fonts %}
+      <!-- Google Fonts offline -->
+      <link rel="stylesheet" href="{{ site.baseurl }}/_assets/gfonts/fonts.css" media="print" onload="this.media='all'">
+    {% endif %}
+
+    <!-- FontAwesome all webfonts (in production, work with js) -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/_assets/css/fontawesome.css" media="print" onload="this.media='all'">
+
+    <!-- Prism offline (in production work with js and cdn's, here like a https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash&plugins=show-language+toolbar+copy-to-clipboard ) -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/node_modules/prismjs/themes/prism-tomorrow.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="{{ site.baseurl }}/node_modules/prismjs/plugins/toolbar/prism-toolbar.css" media="print" onload="this.media='all'">
+    <script src="{{ site.baseurl }}/node_modules/prismjs/prism.js" defer></script>
+    <script src="{{ site.baseurl }}/node_modules/prismjs/components/prism-markup.js" defer></script>
+    <script src="{{ site.baseurl }}/node_modules/prismjs/components/prism-css.js" defer></script>
+    <script src="{{ site.baseurl }}/node_modules/prismjs/components/prism-clike.js" defer></script>
+    <script src="{{ site.baseurl }}/node_modules/prismjs/components/prism-javascript.js" defer></script>
+    <script src="{{ site.baseurl }}/node_modules/prismjs/components/prism-markdown.js" defer></script>
+    <script src="{{ site.baseurl }}/node_modules/prismjs/components/prism-bash.js" defer></script>
+    <script src="{{ site.baseurl }}/node_modules/prismjs/plugins/show-language/prism-show-language.min.js" defer></script>
+    <script src="{{ site.baseurl }}/node_modules/prismjs/plugins/toolbar/prism-toolbar.min.js" defer></script>
+    <script src="{{ site.baseurl }}/node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" defer></script>
+
+  {% endif %}
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="{{ site.baseurl }}/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ site.baseurl }}/assets/img/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="{{ site.baseurl }}/assets/img/favicon/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/img/favicon/apple-touch-icon.png">
+  <!-- 
+  <link rel="icon" href="{{ site.baseurl }}/wp-content/uploads/2016/06/cropped-logo-cinica-lopez-del-amo-300x300.jpg" sizes="32x32" />
+  <link rel="icon" href="{{ site.baseurl }}/wp-content/uploads/2016/06/cropped-logo-cinica-lopez-del-amo-300x300.jpg" sizes="192x192" />
+  <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/wp-content/uploads/2016/06/cropped-logo-cinica-lopez-del-amo-300x300.jpg" />
+  <meta name="msapplication-TileImage" content="{{ site.baseurl }}/wp-content/uploads/2016/06/cropped-logo-cinica-lopez-del-amo-300x300.jpg" />
+  -->
+
+  <!-- Feed -->
+  <link rel="alternate" type="application/rss+xml" href="{{ site.baseurl }}/feed.xml">
+
+</head>

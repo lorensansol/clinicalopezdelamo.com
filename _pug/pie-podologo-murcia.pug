@@ -1,0 +1,24 @@
+.
+  ---
+  layout: compress
+  ---
+  
+doctype html
+html(lang="es")
+  | {% include head.html %}
+  body#top(class='{{ layout }}')
+    include includes/podologia/nav.pug
+    include includes/podologia/header.pug
+    main(role='main').text-muted
+      include includes/podologia/funciones.pug
+      include includes/podologia/servicios.pug
+      include includes/podologia/especialista.pug
+      include includes/podologia/resenas.pug
+      include includes/covid.pug
+      include includes/podologia/contacto.pug
+    .
+      {% include footer.html %}
+      {% include btn-callnow.html %}
+    .d-md-none.pb-4.bg-white
+    script(type='application/ld+json')
+      include includes/podologia/schema.json

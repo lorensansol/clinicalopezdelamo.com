@@ -1,0 +1,22 @@
+.
+  ---
+  layout: compress
+  ---
+  
+doctype html
+html(lang="es")
+  | {% include head.html %}
+  body#top(class='{{ layout }}')
+    include includes/fisioterapia/nav.pug
+    include includes/fisioterapia/header.pug
+    main(role='main').text-muted
+      include includes/fisioterapia/funciones.pug
+      include includes/fisioterapia/servicios.pug
+      include includes/covid.pug
+      include includes/fisioterapia/contacto.pug
+    .
+      {% include footer.html %}
+      {% include btn-callnow.html %}
+    .d-md-none.pb-4.bg-white
+    script(type='application/ld+json')
+      include includes/fisioterapia/schema.json

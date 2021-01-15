@@ -1,0 +1,19 @@
+.btn-up {
+  position: fixed !important;
+  top: auto;
+  bottom: 0;
+  right: 0;
+  min-width: auto;
+  width: 3rem;
+  height: 3rem !important;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+  z-index: 10;
+  &.btn-up-hide {
+    opacity: 0;
+    bottom: -4em;
+  }
+}

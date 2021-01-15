@@ -1,0 +1,35 @@
+- name: Clínica
+  link: /
+  fa: home
+- name: Más Podología (Blog)
+  link: /mas-podologia
+  fa: comment
+- name: Categorías
+  link: /categorias
+  onclick: true
+  fa: bookmark
+# - name: Etiquetas
+#   link: /etiquetas
+#   onclick: true
+#   fa: tag
+# - name: Autores
+#   link: /autores
+#   onclick: true
+- name: Sobre Más Podología
+  link: /sobre-mas-podologia
+  fa: info-circle
+- name: Sobre la Clínica
+  link: /quienes-somos
+  fa: user-md
+- name: Servicios de Podología
+  link: /pie-podologo-murcia
+  fa: shoe-prints
+- name: Servicios de Odontología
+  link: /dental-odontologia-murcia
+  fa: tooth
+- name: Servicios de Fisioterapia
+  link: /fisioterapia-osteopatia-murcia
+  fa: hands
+- name: Dónde estamos
+  link: /donde-estamos
+  fa: map-marker-alt

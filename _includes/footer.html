@@ -1,0 +1,77 @@
+<footer class="footer bg-primary py-5">
+  <div class="container">
+    <div class="share mb-4">
+      <ul class="d-flex justify-content-center p-0">
+        <li class="d-inline-block mx-2">
+          <button class="btn btn-secondary p-1" onclick="window.open('https://www.facebook.com/clinicalopezdelamo/','_blank')">
+            <i class="fab fa-fw fa-2x fa-facebook-f"></i>
+          </button>
+        </li>
+        <li class="d-inline-block mx-2">
+          <button class="btn btn-secondary p-1" onclick="window.open('https://twitter.com/clopezdelamo','_blank')">
+            <i class="fab fa-fw fa-2x fa-twitter"></i>
+          </button>
+        </li>
+        <li class="d-inline-block mx-2">
+          <button class="btn btn-secondary p-1" onclick="window.open('https://www.youtube.com/channel/UCpJMkSZyWbE-IR_hcryv6Lg','_blank')">
+            <i class="fab fa-fw fa-2x fa-youtube"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="d-inline-block my-2 mx-3">
+        <i class="fas fa-copyright text-secondary mr-1"></i>
+        <!-- <svg fill="currentColor" class="icon-inline text-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8a248 248 0 100 496 248 248 0 000-496zm117 347c-1 2-40 45-110 45-84 0-144-63-144-145 0-81 62-143 144-143 67 0 102 37 103 38a12 12 0 011 15l-22 35c-4 6-13 7-18 2-1 0-27-24-62-24-46 0-74 34-74 76 0 40 25 80 74 80 39 0 65-28 66-29 5-5 14-5 18 1l25 34a12 12 0 01-1 15z"/></svg> -->
+        <a class="text-white" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      </div>
+      <div class="d-inline-block my-2 mx-3">
+        <i class="fas fa-shield-alt text-secondary mr-1"></i>
+        <!-- <svg fill="currentColor" class="icon-inline text-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 224h-24v-72a152 152 0 00-304 0v72H48c-26 0-48 22-48 48v192c0 27 22 48 48 48h352c27 0 48-21 48-48V272c0-26-21-48-48-48zm-104 0H152v-72a72 72 0 01144 0v72z"/></svg> -->
+        {% if page.url == '/' %}
+          <a class="text-white" href="{{ site.baseurl }}/legal">Aviso Legal</a>
+        {% else %}
+          <span class="text-white" onclick="location.href='{{ site.baseurl }}/legal'">Aviso Legal</span>
+        {% endif %}
+      </div>
+      <div class="d-inline-block my-2 mx-3">
+        <i class="fas fa-cookie-bite text-secondary mr-1"></i>
+        <!-- <svg id="icon-cookie" class="icon-none" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M511 256c-70-1-127-58-127-128-70 0-127-57-128-126-27-5-55 0-80 12l-69 36a132 132 0 00-57 57l-36 69a133 133 0 00-12 81l12 76a133 133 0 0037 73l55 55a132 132 0 0072 37l77 12c28 5 56 0 81-12l69-36a132 132 0 0058-57l35-69c12-25 17-53 13-80zM176 368a32 32 0 110-64 32 32 0 010 64zm32-160a32 32 0 110-64 32 32 0 010 64zm160 128a32 32 0 110-64 32 32 0 010 64z"/></svg> -->
+        <!-- <svg class="icon-inline text-dark"><use xlink:href="#icon-cookie"></use></svg> -->
+        <span id="cookies-message-toggle" class="text-white">Cookies</span>
+      </div>
+      <div class="d-inline-block my-2 mx-3">
+        <i class="fas fa-paint-brush text-secondary mr-1"></i>
+        <span class="text-light d-inline">Diseño Web</span>
+        {% if page.url == '/' %}
+          <a class="text-white" href="https://seacomoseo.com/" target="_blank">seacomoseo.com</a>
+        {% else %}
+          <span class="text-white" onclick="window.open('https://seacomoseo.com/diseno-paginas-web','_blank')">seacomoseo.com</span>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% include btn-up.html %}
+{% include cookies-message.html %}
+{% include schema.html %}
+
+<!-- Scripts (without bootstrap.js) -->
+<script src="{{ site.baseurl }}/{% if jekyll.environment != "production" %}_{% endif %}assets/js/scripts.js" assync></script>
+
+<!-- Correct interal links (and onclick=location.href) in html files without active server -->
+{% if jekyll.environment != "production" and site.baseurl != '' %}
+  <script>
+    document.querySelectorAll('a[href^="file://"]').forEach(link => {
+      link.pathname.slice(-1) == '/' ? ext = 'index.html' : ext = '.html'
+      link.href = link.pathname + ext + link.hash
+    })
+    document.querySelectorAll('[onclick^="location.href=\'file://"]').forEach(link => {
+      let linkParts = link.getAttribute('onclick').replace(/^location.href\='|'$/g, '').split('#')
+      linkParts[0].slice(-1) == '/' ? ext = 'index.html' : ext = '.html'
+      linkParts[1] ? linkParts[1] = '#' + linkParts[1] : linkParts[1] = ''
+      link.setAttribute('onclick', 'location.href="' + linkParts[0] + ext + linkParts[1] + '"' )
+    })
+  </script>
+{% endif %}

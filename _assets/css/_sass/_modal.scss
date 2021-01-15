@@ -1,0 +1,35 @@
+
+[data-toggle='modal'] {
+  cursor: pointer;
+}
+.modal {
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba($secondary, .5);
+  opacity: 0;
+  height: 0;
+  transition: opacity .3s, height .3s step-end;
+  .modal-content {
+      border-radius: $border-radius;
+      transform: translateY(50vh);
+      transition: transform .3s;
+  }
+  &.show {
+      opacity: 1;
+      height: 100%;
+      transition: opacity .3s, height 0s step-end;
+      .modal-content {
+          transform: translateY(0);
+      }
+  }
+  button.close {
+      float: none;
+      position: absolute;
+      top: .75rem;
+      right: 1rem;
+      font-size: 3rem;
+      line-height: 3rem;
+      z-index: 100;
+  }
+}

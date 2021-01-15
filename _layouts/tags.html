@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="sitetag mx-auto">
+  <h1 class="posttitle text-uppercase">{{ page.title }}</h1>
+</div>
+
+<div class="d-flex flex-wrap mt-5">
+  {% for tag in site.tags %}
+    <a class="smoothscroll btn btn-primary m-1" href="#{{ tag[0] | slugify: 'latin' }}">{{ tag[0] }}</a>
+  {% endfor %}
+</div>
+
+{% for tag in site.tags %}
+  <h2 class="mt-5 mb-n4 text-uppercase" id="{{ tag[0] | slugify: 'latin' }}">{{ tag[0] }}</h2>
+  <div class="blog-grid-container">
+    {% assign pages_list = tag[1] %}
+    {% for post in pages_list %}
+      {% if post.title != null %}
+        {% if group == null or group == post.group %}
+          {% include postbox.html %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% assign pages_list = nil %}
+    {% assign group = nil %}
+  </div>
+{% endfor %}

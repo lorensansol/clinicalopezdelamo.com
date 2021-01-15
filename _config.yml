@@ -1,0 +1,150 @@
+# Site
+name: 'Clínica López del Amo'
+title: 'Clínica López del Amo'
+description:
+url: https://clinicalopezdelamo.com
+baseurl: ''
+logo: /wp-content/uploads/2016/06/cropped-logo-cinica-lopez-del-amo.jpg
+favicon: /favico.ico
+google_analytics: UA-75330923-5
+google_site_verification: 'XRI3xl9j74Znh64ZTexiKkMwv6nTY6il9hjxYXndQl0'
+# google_adsense: 'ca-pub-xxxxxxxxxxxxxxxx'
+# mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+email: '&#x61;&#x6E;&#x64;&#x72;&#x65;&#x73;&#x2E;&#x6C;&#x6F;&#x70;&#x65;&#x7A;&#x64;&#x65;&#x6C;&#x61;&#x6D;&#x6F;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;'
+disqus: 'clinicalopezdelamo'
+lang: es
+permalink: /:title
+author_box: true
+author_links: true
+search: true
+lazyload_comments: false # if not, comments load when clic
+critical_path_css: true
+google_fonts: 'Open+Sans:400|Roboto+Slab:700' # sin &display=swap
+# google_fonts: 'family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@700&display=swap'
+
+# Authors
+authors:
+  andres:
+    name: Andrés López del Amo
+    avatar: /wp-content/uploads/podologo-dr-d-andres-lopez-del-amo-lorente-compressor-300x200.jpg
+    # gravatar: a48d43c9530f50721162853c0b68aebc
+    # email: '&#x61;&#x79;&#x65;&#x6C;&#x65;&#x6E;&#x62;&#x6F;&#x74;&#x74;&#x61;&#x72;&#x69;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;'
+    web: /pie-podologo-murcia#especialista
+    twitter: https://twitter.com/maspodologia
+    description: Podólogo Especialista, Asesor, Investigador, Catedrático y Ponente en cursos de formación continuada y congresos nacionales e internacionales.
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-figure
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/categorias#:name'
+
+# Pagination
+paginate: 12
+paginate_path: /mas-podologia/page:num/
+
+# Drafts and pages like collections
+collections:
+  drafts:
+    output: true
+  pages:
+    output: true
+    permalink: /:name
+
+# Compress HTML
+compress_html:
+  clippings: all
+  comments: all
+  ignore:
+    envs: [development]
+
+# Exclude
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - _pug
+  - fonts.list
+  - gulpfile.babel.js
+  - package.json
+  - package-lock.json
+  - makefile
+
+# Defaults values
+defaults:
+  - # All posts
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: post
+      author: andres
+      toc: true
+      description: false
+      comments: true
+      excerpt_separator: <!--more-->
+  - # All drafts
+    scope:
+      path: ''
+      type: 'drafts'
+    values:
+      layout: post
+      author: andres
+      toc: true
+      description: false
+      comments: false
+      sitemap: false
+      excerpt_separator: <!--more-->
+  - # All pages
+    scope:
+      path: ''
+      type: 'pages'
+    values:
+      layout: page
+      toc: false
+      description: false
+      comments: false
+      sitemap: false
+      excerpt_separator: <!--more-->
+  - # Neither noindex nor sitemap in pages
+    scope:
+      path: 'mas-podologia/page'
+    values:
+      sitemap: false
+  - # google-site-verification file
+    scope:
+      path: 'google7467d923cbb3eb4c.html'
+    values:
+      sitemap: false
+  - # Netlify CMS admin
+    scope:
+      path: 'admin/index.html'
+    values:
+      sitemap: false
+  - # PDF all files
+    scope:
+      path: '**/*.pdf'
+    values:
+      sitemap: false
+
+# Other
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+  transliterated_header_ids: false
+
+# DEVELOPMENT CONFIG IN _config_dev.yml

@@ -1,0 +1,15 @@
+---
+layout: default
+title: Archivo
+---
+
+<!-- Begin List Posts
+================================================== -->
+
+<h1>Archivo de posts con <span>{{ page.type }} '{{ page.title }}'</span></h1>
+
+<div class="blog-grid-container">
+  {% for post in page.posts %}
+    {% include postbox.html %}
+  {% endfor %}
+</div>

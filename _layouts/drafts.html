@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="sitetag mx-auto">
+  <h1 class="posttitle">{{ page.title }}</h1>
+</div>
+
+<!-- Posts Index
+================================================== -->
+<div class="blog-grid-container">
+  {% for post in site.drafts %}
+      {% include postbox.html %}
+  {% endfor %}
+</div>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+  <span class="navigation" role="navigation">
+      {% include pagination.html %}
+  </span>
+</div>

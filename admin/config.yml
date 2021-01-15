@@ -1,0 +1,98 @@
+backend:
+  name: github
+  branch: main # Branch to update (optional; defaults to master)
+  repo: lorensansol/clinicalopezdelamo.com
+  site_domain: clinicalopezdelamo.netlify.com
+media_folder: wp-content/uploads # Media files will be stored in the repo under images/uploads
+public_folder: /wp-content/uploads # The src attribute for uploaded media will begin with /images/uploads
+site_url: /
+display_url: https://clinicalopezdelamo.com
+logo_url: /wp-content/uploads/clinica-lopez-amo-podologia-odontologia-fisioterapia-murcia-300x169.jpg
+locale: es
+# show_preview_links: false
+collections:
+  - name: posts # Used in routes, e.g., /admin/collections/blog
+    identifier_field: "{{fields.slug}}"
+    label: Posts # Used in the UI
+    folder: _posts # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{fields.date}}-{{fields.slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    preview_path: "{{fields.slug}}"
+    summary: "{{date}} · {{title}}"
+    sortable_fields: ['date', 'last_modified_at', 'commit_date', 'title']
+    view_filters:
+      - label: Publicados
+        field: published
+        pattern: true
+      - label: No Publicados
+        field: published
+        pattern: false
+    view_groups:
+      - label: Año
+        field: date
+        pattern: \d{4}
+      - label: Mes
+        field: date
+        pattern: \d{4}-\d{2}
+      - label: Publicados
+        field: published
+    fields: # The fields for each document, usually in front matter
+      - label: Título
+        name: title
+        widget: string
+        hint: "Ejemplo: 'Día de paseo por el nuevo barrio'"
+      - label: Título SEO
+        name: title_seo
+        widget: string
+        hint: "40 < Caracteres < 65 (~60) · 🥇 【】 ® © ▷ ᐅ ◁ ✆ ⊛ « » ‹ ›"
+        required: false
+      - label: Slug
+        name: slug
+        widget: string
+        hint: "Corto · Descriptivo · Sin palabras irrelevantes (de, por, para, el...) · En minúsculas · Sin espacios (SI guiones medios) · Sin caracteres extraños (ni eñes ni barras bajas) · Ejemplo: 'paseo-nuevo-barrio'."
+      - label: Descripción
+        name: description
+        widget: text
+        hint: "70 < Caracteres < 155 (~135) · llll➤ ✅ ➕ ⚡ ✆ ® © ❤ ⬤ ✚ ➥ ✓ « » ‹ ›"
+      - label: Categorías
+        name: categories
+        widget: list
+        hint: Indica una o varias categorías separadas por coma y espacio
+        min: 1
+        default: General
+      - label: Imagen principal
+        name: image
+        widget: image
+        hint: "Nombre de archivo con mismo formato que 'slug' · Máximo 700 pixeles de ancho · Editor online: pixlr.com · Compresor online: kraken.io"
+        required: false
+      - label: Índice
+        name: toc
+        widget: boolean
+        hint: Creado automáticamente mediante subencabezados
+        default: false
+      - label: Publicar
+        name: published
+        widget: boolean
+        default: false
+      - label: Fecha
+        name: date
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+      - label: Última modifiación
+        name: last_modified_at
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+        default: false
+        required: false
+      - label: Contenido
+        name: body
+        widget: markdown
+        required: false
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"

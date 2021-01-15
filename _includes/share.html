@@ -1,0 +1,43 @@
+<div class="share text-center my-5">
+  <!-- <i class=" fa-fw mr-3 ml-sm-3 mb-3"></i> -->
+  <!-- <svg class="icon-inline mr-3 ml-sm-3 mb-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 190L328 38c-16-13-40-3-40 18v80C127 138 0 170 0 322c0 62 40 123 83 154 14 10 33-2 28-18-45-145 22-184 177-186v88c0 21 24 31 40 18l176-152c11-9 11-27 0-36z"/></svg> -->
+  <h2 class="text-uppercase mb-4">Comparte</h2>
+  <ul class="d-flex justify-content-center p-0">
+    <li class="d-inline-block mx-2">
+      <button class="btn btn-primary p-1" onclick="window.open('https://twitter.com/intent/tweet?text={{ page.title }}&url={{ page.url | absolute_url }}', 'twitter-share', 'width=550,height=235','_blank')">
+        <i class="fab fa-fw fa-2x fa-twitter"></i>
+        <!-- <svg class="icon-inline" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459 152l1 13c0 139-106 299-299 299-59 0-115-17-161-47a217 217 0 00156-44c-47-1-85-31-98-72l19 1c10 0 19-1 28-3-48-10-84-52-84-103v-2c14 8 30 13 47 14A105 105 0 0136 67c51 64 129 106 216 110-2-8-2-16-2-24a105 105 0 01181-72c24-4 47-13 67-25-8 24-25 45-46 58 21-3 41-8 60-17-14 21-32 40-53 55z"/></svg> -->
+      </button>
+    </li>
+
+    <li class="d-inline-block mx-2">
+      <button class="btn btn-primary p-1" onclick="window.open('https://facebook.com/sharer.php?u={{ page.url | absolute_url }}', 'facebook-share', 'width=550,height=435','_blank')">
+        <i class="fab fa-fw fa-2x fa-facebook-f"></i>
+        <!-- <svg class="icon-inline" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279 288l14-93h-89v-60c0-25 13-50 53-50h40V6s-37-6-72-6c-73 0-121 44-121 125v70H23v93h81v224h100V288z"/></svg> -->
+      </button>
+    </li>
+
+    <!--
+    <li class="d-inline-block mx-2">
+      <button class="btn btn-primary p-1" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}', 'width=550,height=435','_blank')">
+        <i class="fab fa-fw fa-2x"></i>
+        <svg class="icon-inline" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100 448H7V149h93zM54 108C24 108 0 84 0 54a54 54 0 01108 0c0 29-25 54-54 54zm394 340h-93V302c0-34 0-79-48-79s-56 38-56 77v148h-93V149h90v41h1c12-24 43-49 88-49 94 0 111 62 111 143v164z"/></svg>
+      </button>
+    </li>
+    -->
+
+    <li class="d-inline-block mx-2">
+      <button class="btn btn-primary p-1" onclick="window.open('https://api.whatsapp.com/send?text={{ page.url | absolute_url }}','_blank')">
+        <i class="fab fa-fw fa-2x fa-whatsapp"></i>
+        <!-- <svg class="icon-inline" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path d="M150 0A150 150 0 0022 228L0 292c0 2 0 5 2 6a6 6 0 006 2l64-22A150 150 0 10150 0zm96 211c0 5-2 10-6 14l-16 15c-3 4-8 6-13 6h-1c-84-4-152-72-156-156 0-5 2-11 6-15l15-15c4-4 9-6 14-6h6c8 0 16 5 19 13l14 36c2 7 1 15-5 21l-5 6c-3 2-3 6-1 10 7 10 22 29 44 43 3 2 7 2 9-1l6-5c6-6 14-7 21-5l36 14c8 3 13 10 13 19v6z"/></svg> -->
+      </button>
+    </li>
+
+    <li class="d-inline-block mx-2">
+      <button class="btn btn-primary p-1" onclick="location.href='mailto:?body={{ page.url | absolute_url }}%0D%0A{{ page.title }}'">
+        <i class="fa fa-fw fa-2x fa-envelope"></i>
+        <!-- <svg class="icon-inline" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502 191c4-3 10 0 10 5v204c0 27-21 48-48 48H48c-26 0-48-21-48-48V196c0-5 6-8 10-5l154 114c21 15 56 47 92 47s72-33 92-47l154-114zM256 320c23 0 57-29 73-41 133-97 143-105 174-129 6-5 9-12 9-19v-19c0-26-22-48-48-48H48C22 64 0 86 0 112v19c0 7 3 14 9 19 31 24 41 32 174 129 16 12 50 41 73 41z"/></svg> -->
+      </button>
+    </li>
+  </ul>
+</div>
