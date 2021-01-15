@@ -1,7 +1,7 @@
 section#funciones.bg-white
   .container
-    h2.h1 Podólogo
-    .badge.badge-info Pulsa para desplegar información
+    h2.h1(data-showup) Podólogo
+    .badge.badge-info(data-showup) Pulsa para desplegar información
     //- .panel-group#podologo-acordeon(role='tablist' aria-multiselectable='true')
     //-   .panel.panel-default
     //-     .panel-heading#que-hace-podologo-heading(role='tab')
@@ -19,7 +19,7 @@ section#funciones.bg-white
     //-     #funciones-body.panel-collapse.collapse(role='tabpanel' aria-labelledby='funciones-heading')
     //-       .panel-body
     //-         p El podólogo/a es un profesional de la salud que tras una formación universitaria está capacitado para tratar todas y cada una de las afecciones del pie. Acuda al podólogo ante cualquier dolencia de sus pies.
-    .my-2
+    .my-2(data-showup)
       a.btn.btn-primary.my-1.mr-0.mr-md-2(data-toggle='modal' href='#que-puede-hacer') ✚ ¿Qué puede hacer un podólogo?
       a.btn.btn-primary.my-1.ml-0(data-toggle='modal' href='#funciones-podologo') ✚ Funciones del podólogo
     .modal.fade#que-puede-hacer(tabindex='-1' role='dialog' aria-hidden='true')
@@ -42,7 +42,7 @@ section#funciones.bg-white
             p El podólogo/a es un profesional de la salud que tras una formación universitaria está capacitado para tratar todas y cada una de las afecciones del pie. Acuda al podólogo ante cualquier dolencia de sus pies.
             p.m-0.text-right
               button.btn.btn-secondary(data-dismiss='modal' type='button') ✖ Cerrar
-    p
+    p(data-showup)
       | Los pies son la base de nuestro cuerpo. En ellos nos apoyamos, los usamos para caminar, para correr, para estar de pie, para conducir, para prácticamente cualquier actividad física. Cuando tenemos algún problema en los pies, muchas acciones cotidianas pueden verse afectadas. Por este motivo es muy importante cuidar la salud de nuestros pies. Si debido a esto estás buscando un 
       strong podólogo en Murcia
       | , a continuación te detallamos los servicios que puedes encontrar en nuestra clínica del pie López del Amo:
