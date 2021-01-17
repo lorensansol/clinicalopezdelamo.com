@@ -5,7 +5,7 @@ slug: 15-ondas-de-choque-para-fascitis-plantar
 description: Tratamiento conservador para fascitis plantar mediante ondas de choque
 categories:
   - General
-image: ""
+image: /wp-content/uploads/ondas-de-choque-1024x624.jpeg
 toc: false
 published: true
 date: 2021-01-11
