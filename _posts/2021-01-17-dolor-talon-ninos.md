@@ -26,6 +26,8 @@ description: >
   •	Un calzado inadecuado sin amortiguación en la zona del talón.
 
   El tratamiento está dirigido a disminuir el proceso inflamatorio. En clínica del pie López del Amo en Murcia, su podólogo, en primer lugar se debe disminuir la tensión, disminuyendo así el microtrauma de repetición. Esto se lleva a cabo con el uso de ortesis plantares a medida con cazoleta para concentrar la grasa plantar del talón bajo el calcáneo a fin de disminuir las fuerzas de reacción del suelo y consiguiendo una amortiguación de talón o elevación de talón para la eliminar las fuerzas de tensión en el calcáneo. Además de un calzado apropiado, todo esto tiene como objetivo la disminución de impactos, disminuyendo también la sintomatología y el tiempo de recuperación. 
+categories:
+  - General
 image: /wp-content/uploads/dolor-en-el-talo-n-en-nin-os.jpg
 toc: true
 published: false
