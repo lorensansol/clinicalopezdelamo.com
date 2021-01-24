@@ -30,7 +30,7 @@ authors:
     # email: '&#x61;&#x79;&#x65;&#x6C;&#x65;&#x6E;&#x62;&#x6F;&#x74;&#x74;&#x61;&#x72;&#x69;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;'
     web: /pie-podologo-murcia#especialista
     twitter: https://twitter.com/maspodologia
-    description: Podólogo Especialista, Asesor, Investigador, Catedrático y Ponente en cursos de formación continuada y congresos nacionales e internacionales.<br><span class="text-primary" onclick="location.href='/sobre-mas-podologia'"><i class="fas fa-fw fa-info-circle text-secondary"></i> Sobre Más Podología</span>.
+    description: Podólogo Especialista, Asesor, Investigador, Profesor y Ponente en cursos de formación continuada y congresos nacionales e internacionales.<br><span class="text-primary" onclick="location.href='/sobre-mas-podologia'"><i class="fas fa-fw fa-info-circle text-secondary"></i> Sobre Más Podología</span>.
 # Plugins
 plugins:
   - jekyll-paginate
