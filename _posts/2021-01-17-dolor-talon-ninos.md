@@ -13,7 +13,7 @@ published: true
 date: 2021-01-17
 last_modified_at: false
 ---
-![](/wp-content/uploads/dolor-en-el-talo-n-en-nin-os.001.jpeg)
+![](/wp-content/uploads/dolor-en-el-talo-n-en-nin-os.001.jpeg "Enfermedad de Sever o apofisitis calcanea")
 
 La apofisitis calcánea, también conocida como Enfermedad de Sever, es descrita como la presencia de dolor intermitente o continuo en talón, específica en niños y adolescentes activos físicamente o con obesidad.
 
