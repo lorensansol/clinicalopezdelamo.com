@@ -19,7 +19,7 @@ La sociedad tiene bastante asimilada la necesidad de acudir a revisiones médica
 
 La podología no es una ciencia que se reduce a tratar callos. Diversos ámbitos de la vida cotidiana influyen en la anatomía y fisiología del pie, y es allí donde el podólogo puede ejercer su conocimiento. Según la legislación, la Podología es la rama de las ciencias de la salud que se encarga del estudio, diagnóstico y tratamiento de las patologías, enfermedades y alteraciones que afectan al pie. En nuestro país y según el artículo 7.2.d) de la Ley 44/2003, de 21 de noviembre de Ordenación.
 
-El podólogo es el profesional sanitario universitario con los conocimientos, habilidades y aptitudes para realizar las actividades dirigidas a la “***prevención, al diagnóstico y tratamiento de las afecciones y deformidades de los pies”***, mediante procedimientos terapéuticos podológicos como uñas encarnadas, estudio de la pisada y de la carrera, adaptacin de plantillas, quiropodia ( callos durezas verrugas plantares), ciruga del pie etc. 
+El podólogo es el profesional sanitario universitario con los conocimientos, habilidades y aptitudes para realizar las actividades dirigidas a la “***prevención, al diagnóstico y tratamiento de las afecciones y deformidades de los pies”***, mediante procedimientos terapéuticos podológicos como uñas encarnadas, estudio de la pisada y de la carrera, adaptación de plantillas, quiropodia ( callos durezas verrugas plantares), ciruga del pie etc. 
 
 Cuando tenemos algún problema en los pies, muchas acciones cotidianas pueden verse afectadas. Por este motivo es muy importante cuidar la salud de nuestros pies.
 
