@@ -31,7 +31,7 @@ El pie está formado 26 huesos y más de 100 músculos, tendones y ligamentos. G
 
 Acudir a tu podólogo de confianza, permite asesorarte sobre que calzado es al más adecuado en cada momento y situación. Utilizarlos de manera inadecuada puede ser perjudicial para la salud de nuestros pies.
 
-No existe una edad obligatoria a partir de la cual se deba visitar al podólogo. En nuestra Clínica del pie, el podólogo recomendamos asistir a la primera revisión podal a partir de los dos años de edad. Durante esta etapa de vida pueden surgir diversas anomalías o patologías. Si estas “***son diagnosticadas y tratadas a tiempo se evitarán problemas mayores en el futuro”***. De igual modo, durante la etapa adulta es imprescindible continuar visitando al podólogo. Los pies merecen ser cuidados diariamente y con una atención podológica periódica.
+No existe una edad obligatoria a partir de la cual se deba visitar al podólogo. En nuestra Clínica del pie, los podólogos recomendamos asistir a la primera revisión podal a partir de los dos años de edad. Durante esta etapa de vida pueden surgir diversas anomalías o patologías. Si estas “***son diagnosticadas y tratadas a tiempo se evitarán problemas mayores en el futuro”***. De igual modo, durante la etapa adulta es imprescindible continuar visitando al podólogo. Los pies merecen ser cuidados diariamente y con una atención podológica periódica.
 
  Otro motivo importante por el que acudir tu podólogo es si eres diabético, sin importar la edad, debes acudir al podólogo cuando sea necesario para revisiones o tratamientos puntuales y de manera periódica. Además, las personas diabéticas deben tener un control diario de sus pies. 
 
