@@ -15,11 +15,9 @@ Los pies son la base de nuestro cuerpo. En ellos nos apoyamos, los usamos para c
 
 *Pero… ¿sabéis quién es especialista encargado de velar por la salud de tus pies?*
 
-La sociedad tiene bastante asimilada la necesidad de acudir a revisiones médicas con cierta frecuencia con el objetivo de mantener su buena salud y prevenir posibles problemas o enfermedades futuras pero el podólogo es una de las profesiones más desconocidas a nivel de la salud y suelen ser los grandes olvidados del cuerpo. Y al ser los grandes olvidados por norma general suelen ser los grandes descuidados.
+La sociedad tiene bastante asimilada la necesidad de acudir a revisiones médicas con cierta frecuencia con el objetivo de mantener su buena salud y prevenir posibles problemas o enfermedades futuras pero el podólogo es una de las profesiones más desconocidas a nivel de la salud y los pies suelen ser los grandes olvidados del cuerpo. 
 
 La podología no es una ciencia que se reduce a tratar callos. Diversos ámbitos de la vida cotidiana influyen en la anatomía y fisiología del pie, y es allí donde el podólogo puede ejercer su conocimiento. Según la legislación, la Podología es la rama de las ciencias de la salud que se encarga del estudio, diagnóstico y tratamiento de las patologías, enfermedades y alteraciones que afectan al pie. En nuestro país y según el artículo 7.2.d) de la Ley 44/2003, de 21 de noviembre de Ordenación.
-
- 
 
 El podólogo es el profesional sanitario universitario con los conocimientos, habilidades y aptitudes para realizar las actividades dirigidas a la “***prevención, al diagnóstico y tratamiento de las afecciones y deformidades de los pies”***, mediante procedimientos terapéuticos podológicos como uñas encarnadas, estudio de la pisada y de la carrera, adaptacin de plantillas, quiropodia ( callos durezas verrugas plantares), ciruga del pie etc. 
 
