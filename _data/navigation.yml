@@ -27,9 +27,9 @@
 - name: Servicios de Odontología
   link: /dental-odontologia-murcia
   fa: tooth
-- name: Servicios de Fisioterapia
-  link: /fisioterapia-osteopatia-murcia
-  fa: hands
+# - name: Servicios de Fisioterapia
+#   link: /fisioterapia-osteopatia-murcia
+#   fa: hands
 - name: Dónde estamos
   link: /donde-estamos
   fa: map-marker-alt
